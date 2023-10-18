@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cab Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="background-image" src="cab.jpg" alt="Cab Image">
+        <div class="content">
+            <h1>Cab Booking System</h1>
+            <form id="dijkstraForm">
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+
+                <button type="button" onclick="findShortestPath()">Find Shortest Path</button>
+            </form>
+
+            <div id="result" class="result-box">
+                <!-- The result will be displayed here -->
+            </div>
+            <br>
+            <button><a style="text-decoration: none;color: white;" href="booking.html" >Book Your Cab</a></button>
+        </div>
+    </div>
+
+    <script src="dijkstra.js"></script>
+</body>
+</html>
